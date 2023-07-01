@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- set meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link styles -->
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="../styles/header-style.css" />
+    <link rel="stylesheet" href="../styles/login-style.css" />
+    <!-- link Roboto google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link Boxicons icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- import fontawesome library  -->
+    <script
+      src="https://kit.fontawesome.com/17a42eabae.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- link scripts -->
+    <script src="../components/Header.js" type="module" defer></script>
+    <script src="../JS/login.js" type="module" defer></script>
+    <!-- set title -->
+    <title>login</title>
+  </head>
+  <body>
+    <custom-header></custom-header>
+    <main>
+      <div class="flip-container" id="flip-container">
+        <div class="login-register-container">
+          <form class="login" id="login">
+            <button class="create-have" id="create-acc">
+              Create An Account
+            </button>
+          </form>
+          <form class="register" id="register">
+            <label for="first-name"
+              >first name <span><i class="fa-solid fa-star-of-life"></i></span
+            ></label>
+            <input type="text" id="first-name" />
+            <label for="last-name"
+              >last name <span><i class="fa-solid fa-star-of-life"></i></span
+            ></label>
+            <input type="text" id="last-name" />
+            <label for="user-name"
+              >user name <span><i class="fa-solid fa-star-of-life"></i></span
+            ></label>
+            <input type="text" id="user-name" />
+            <label for="email"
+              >email <span><i class="fa-solid fa-star-of-life"></i></span
+            ></label>
+            <input type="email" name="user-mail" id="email" />
+            <label for="password"
+              >password <span><i class="fa-solid fa-star-of-life"></i></span
+            ></label>
+            <input type="password" name="user-re-password" id="password" />
+            <input type="submit" value="Sign Up" class="sign" id="sign" />
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

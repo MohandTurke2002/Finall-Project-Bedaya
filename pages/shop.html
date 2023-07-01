@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- set meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link styles -->
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="../styles/header-style.css" />
+    <link rel="stylesheet" href="../styles/shop-style.css" />
+    <!-- link Roboto google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link Boxicons icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- import fontawesome library  -->
+    <script
+      src="https://kit.fontawesome.com/17a42eabae.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- link scripts -->
+    <script src="../components/Header.js" type="module" defer></script>
+    <script type="module" src="../JS/functions.js" defer></script>
+    <script src="../JS/shop.js" type="module" defer></script>
+    <!-- set title -->
+    <title>Shop</title>
+  </head>
+  <body>
+    <custom-header></custom-header>
+    <main>
+      <div class="welcome-image-container">
+        <div class="image-wrapper"></div>
+        <div class="half-squares">
+          <span class="top-left"></span><span class="top-right"></span
+          ><span class="bottom-left"></span><span class="bottom-right"></span>
+        </div>
+        <div class="welcome-text">
+          <h1>our store</h1>
+          <p>search games from all around the world!</p>
+        </div>
+      </div>
+      <div class="filter-container">
+        <form>
+          <div class="search-wrapper">
+            <div class="icon">
+              <i class="bx bx-search"></i>
+            </div>
+            <div class="input-wrapper">
+              <input
+                type="text"
+                placeholder="Search"
+                class="search"
+                id="search"
+              />
+            </div>
+          </div>
+          <div class="filter-categories" id="filter-categories">
+            <select name="Sort" id="sort">
+              <option value="All categories">All categories</option>
+              <option value="Action">Action</option>
+              <option value="Shooter">Shooter</option>
+              <option value="RPG">RPG</option>
+              <option value="Adventure">Adventure</option>
+              <option value="Puzzle">Puzzle</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="container-games">
+        <div class="sliders-wrapper" id="sliders-wrapper"></div>
+      </div>
+    </main>
+  </body>
+</html>

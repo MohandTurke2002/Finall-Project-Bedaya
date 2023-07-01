@@ -1,0 +1,279 @@
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--alt-color);
+  padding: 20px;
+  border-radius: 15px;
+  flex-direction: column;
+  row-gap: 10px;
+  box-shadow: 0px 0px 10px -5px black;
+}
+
+.profile .user-name {
+  font-size: 30px;
+  color: var(--main-text-color);
+  text-transform: capitalize;
+}
+
+.profile .user-email {
+  font-size: 15px;
+}
+
+.profile .user-id {
+  opacity: 0.5;
+}
+
+.profile .user-image {
+  width: 100px;
+  height: 100px;
+  background-color: #777;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 75px;
+  color: white;
+}
+
+.profile .controls {
+  display: flex;
+  column-gap: 20px;
+}
+
+.profile button.logout {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: transparent;
+  border: 1px solid #b31312;
+  color: #b31312;
+  cursor: pointer;
+}
+
+.profile button.logout:hover {
+  background-color: #b31312;
+  color: white;
+}
+.items-wrapper {
+  width: 100%;
+  height: calc(100vh - 125px);
+  overflow-y: scroll;
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card-game {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: var(--alt-color);
+  border-radius: 10px;
+  row-gap: 10px;
+  width: calc(100% / 4 - 40px);
+  height: fit-content;
+  box-shadow: 0px 0px 10px -5px black;
+}
+
+.card-game:hover {
+  transform: perspective(500px) translateZ(70px);
+}
+
+.card-game .media-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+
+.card-game .media-wrapper > img {
+  position: absolute;
+  height: 200px;
+}
+.card-game .describe > h3 {
+  margin-bottom: 6px;
+  text-transform: capitalize;
+  font-size: 20px;
+  height: 45px;
+}
+
+.card-game .describe > p {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.card-game .rate-price {
+  display: flex;
+  justify-content: space-between;
+  color: var(--main-text-color);
+  align-items: center;
+  font-size: 16px;
+}
+
+.card-game .rate-price .rate-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.card-game .rate-wrapper > i {
+  font-size: 14px;
+}
+
+.card-game .usr-plat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-game .usr-plat .user-image {
+  width: 30px;
+  height: 30px;
+  display: flex;
+}
+
+.card-game .usr-plat .user-image img {
+  border-radius: 50%;
+}
+
+.card-game .media-wrapper > video {
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+}
+
+.card-game .media-wrapper > video.auto-play {
+  z-index: 1 !important;
+}
+
+.card-game .usr-plat .platform-icon {
+  font-size: 20px;
+  display: flex;
+  column-gap: 10px;
+}
+
+.card-game .cart-fav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-game .cart-fav-container .add-cart {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--main-text-color);
+  font-size: 15px;
+  background-color: transparent;
+  color: var(--main-text-color);
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.card-game .add-cart:hover {
+  background-color: var(--main-text-color) !important;
+  color: white !important;
+}
+
+.card-game .cart-fav-container .add-fav {
+  background-color: transparent;
+  color: var(--main-text-color);
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.member-wrapper {
+  width: 100%;
+  height: calc(100vh - 125px);
+  overflow-y: scroll;
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card-member {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: var(--alt-color);
+  border-radius: 10px;
+  row-gap: 10px;
+  width: calc(100% / 4 - 40px);
+  align-items: center;
+  height: fit-content;
+}
+
+.card-member .avatar-container {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.card-member .user-info-wrapper h3 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.card-member .user-info-wrapper p {
+  text-align: center;
+  font-size: 15px;
+  opacity: 0.5;
+}
+
+.card-member .add-friend-wrapper button {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--main-text-color);
+  font-size: 15px;
+  background-color: transparent;
+  color: var(--main-text-color);
+  cursor: pointer;
+}
+
+.card-member .add-friend-wrapper button:hover {
+  background-color: var(--main-text-color) !important;
+  color: white !important;
+}
+
+.card-member .add-friend-wrapper button i {
+  font-size: 18px;
+}
+
+.title-section {
+  color: var(--main-text-color);
+  font-size: 40px;
+  text-transform: uppercase;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  width: fit-content;
+  margin: 50px auto;
+  border: 2px solid var(--main-text-color);
+}
+
+@media screen and (max-width: 767px) {
+  .sliders-wrapper .card-game {
+    width: 100% !important;
+  }
+  .member-container .card-member {
+    width: 100% !important;
+  }
+  .title-section {
+    font-size: 30px !important;
+  }
+}

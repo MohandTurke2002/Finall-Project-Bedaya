@@ -1,0 +1,64 @@
+.member-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-member {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: var(--alt-color);
+  border-radius: 10px;
+  row-gap: 10px;
+  width: calc(100% / 4 - 40px);
+  align-items: center;
+  height: fit-content;
+}
+
+.card-member .avatar-container {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.card-member .user-info-wrapper h3 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.card-member .user-info-wrapper p {
+  text-align: center;
+  font-size: 15px;
+  opacity: 0.5;
+}
+
+.card-member .add-friend-wrapper button {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--main-text-color);
+  font-size: 15px;
+  background-color: transparent;
+  color: var(--main-text-color);
+  cursor: pointer;
+}
+
+.card-member .add-friend-wrapper button:hover {
+  background-color: var(--main-text-color) !important;
+  color: white !important;
+}
+
+.card-member .add-friend-wrapper button i {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .member-container .card-member {
+    width: 100% !important;
+  }
+}
